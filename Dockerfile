@@ -28,9 +28,6 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk/jre
 # map /config to host defined config path (used to store configuration from app)
 VOLUME /config
 
-# map streambaby.ini
-VOLUME /streambaby-0.54/streambaby.ini
-
 # map /media to host defined media path (used to read/write to media library)
 VOLUME /media
 
