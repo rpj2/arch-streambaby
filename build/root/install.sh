@@ -42,7 +42,8 @@ source /root/aur.sh
 #/root/github.sh -df airsonic.war -dp "/tmp" -ep "/tmp/extracted" -ip "/opt/airsonic" -go "airsonic" -gr "airsonic" -rt "binary"
 
 # download streambaby
-curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 retry-max-time 60 -o /tmp/streambaby-0.54.zip -L https://sourceforge.net/projects/streambaby/files/latest/download
+#curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 retry-max-time 60 -o /tmp/streambaby-0.54.zip -L https://downloads.sourceforge.net/project/streambaby/streambaby-0.54.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fstreambaby%2Ffiles%2Fstreambaby-0.54.zip%2Fdownload&ts=1553241633
+curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 retry-max-time 60 -o /tmp/streambaby-0.54.zip -L https://github.com/rpj2/arch-streambaby/blob/master/build/root/streambaby-0.54.zip
 
 # unzip streambaby
 unzip /tmp/streambaby-0.54.zip -d /
