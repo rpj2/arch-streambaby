@@ -22,9 +22,9 @@ mv /tmp/scripts-master/shell/arch/docker/*.sh /root/
 pacman_packages="ffmpeg"
 
 # install compiled packages using pacman
-#if [[ ! -z "${pacman_packages}" ]]; then
-#	pacman -S --needed $pacman_packages --noconfirm
-#fi
+if [[ ! -z "${pacman_packages}" ]]; then
+	pacman -S --needed $pacman_packages --noconfirm
+fi
 
 # aur packages
 ####
@@ -34,12 +34,6 @@ aur_packages="jre8"
 
 # call aur install script (arch user repo)
 source /root/aur.sh
-
-# github releases
-####
-
-# download airsonic
-#/root/github.sh -df airsonic.war -dp "/tmp" -ep "/tmp/extracted" -ip "/opt/airsonic" -go "airsonic" -gr "airsonic" -rt "binary"
 
 # download streambaby
 curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/streambaby-0.54.zip -L https://sourceforge.net/projects/streambaby/files/streambaby-0.54.zip/download#
