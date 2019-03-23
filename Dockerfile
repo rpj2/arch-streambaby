@@ -31,6 +31,9 @@ VOLUME /config
 # map /media to host defined media path (used to read/write to media library)
 VOLUME /media
 
+# map /cache to where thumbnails will be placed
+VOLUME /cache
+
 # expose port for http
 EXPOSE 7290
 

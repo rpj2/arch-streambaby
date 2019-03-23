@@ -51,6 +51,9 @@ mkdir /config
 mv /streambaby-0.54/streambaby.ini /config/
 ln -s /config/streambaby.ini /streambaby-0.54/streambaby.ini
 
+mv /streambaby-0.54/cache /
+ln -s /cache /streambaby-0.54/cache
+
 # container perms
 ####
 
