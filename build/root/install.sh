@@ -48,6 +48,9 @@ ln -s /config/streambaby.ini /streambaby-0.54/streambaby.ini
 touch /config/streambaby.log
 ln -s /config/streambaby.log /streambaby-0.54/streambaby.log
 
+mv /streambaby-0.54/simplelog.properties /config/
+ln -s /config/simplelog.properties /streambaby-0.54/simplelog.properties
+
 mv /streambaby-0.54/cache /
 ln -s /cache /streambaby-0.54/cache
 
