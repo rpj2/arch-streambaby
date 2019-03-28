@@ -34,7 +34,7 @@ VOLUME /media
 # map /cache to where thumbnails will be placed
 VOLUME /cache
 
-# expose port for http
+# expose port for streambaby
 EXPOSE 7290
 
 # set permissions

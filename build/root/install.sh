@@ -41,18 +41,6 @@ curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-ti
 # unzip streambaby
 unzip /tmp/streambaby-0.54.zip -d /
 
-mkdir /config
-mv /streambaby-0.54/streambaby.ini /config/
-ln -s /config/streambaby.ini /streambaby-0.54/streambaby.ini
-
-touch /config/streambaby.log
-ln -s /config/streambaby.log /streambaby-0.54/streambaby.log
-
-mv /streambaby-0.54/simplelog.properties /config/
-ln -s /config/simplelog.properties /streambaby-0.54/simplelog.properties
-
-ln -s /cache /streambaby-0.54/cache
-
 # container perms
 ####
 
