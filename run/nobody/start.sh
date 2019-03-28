@@ -76,7 +76,7 @@ else
 	echo "/streambaby-0.54/simplelog.properties.original does not exist."
 	# backed up copy doesn't exist, does the original exist?
 	if [ -f /streambaby-0.54/simplelog.properties ]; then
-		echo "Moving simplelog.properties to simplelog.properties.original
+		echo "Moving simplelog.properties to simplelog.properties.original"
 		mv /streambaby-0.54/simplelog.properties /streambaby-0.54/simplelog.properties.original
 	else
 		echo "Creating simplelog.properties default as simplelog.properties.original"
@@ -124,7 +124,7 @@ fi
 
 # check if cache directory exists and needs to be removed
 if [ -d /streambaby-0.54/cache ]; then
-	echo "Removing /streambaby-0.54/cache directory.
+	echo "Removing /streambaby-0.54/cache directory."
 	rm -rf /streambaby-0.54/cache
 else
 	echo "/streambaby-0.54/cache does not exist as a directory."
