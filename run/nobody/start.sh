@@ -10,7 +10,7 @@ else
 		echo "Moving streambaby.ini to streambaby.ini.original"
 		mv /streambaby-0.54/streambaby.ini /streambaby-0.54/streambaby.ini.original
 	else
-		echo "Creating streambaby.ini default as streambaby.ini.original
+		echo "Creating streambaby.ini default as streambaby.ini.original"
 		cat <<EOF>/streambaby-0.54/streambaby.ini.original
 #
 # ./streambaby --help for more configuration file options
